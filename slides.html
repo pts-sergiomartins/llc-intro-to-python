@@ -1452,6 +1452,416 @@ print number_of_todos
       </script>
     </section>
 
+    <!-- Start of Sergio's slides -->
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Bonus Slides
+
+        because you guys were really fast!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Bonus Roadmap:
+
+        * Look at 2 functions built into Python: `len()` and `sorted()`
+        * Learn how to add items from an existing list
+        * Look at housing prices in Toronto over time
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Checking length
+
+        Python is much smarter than some other languages. You can easily check how long something is
+
+        ```python
+        # len() tells you the length of something. Examples:
+
+        fruits = ["apple", "banana", "orange"]
+        len(fruits)
+
+        len("Toronto")
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Checking length
+
+        Python is much smarter than some other languages. You can easily check how long something is
+
+        ```python
+        # len() tells you the length of something. Examples:
+
+        fruits = ["apple", "banana", "orange"]
+        len(fruits)
+
+        len("Toronto")
+
+        favourite_things = ["walks", "peanut butter", "playing fetch"]
+        if len(favourite_things) > 2:
+            print("you have many favourite things!")
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Checking length
+
+        Python is much smarter than some other languages. You can easily check how long something is
+
+        ```python
+        # len() tells you the length of something. Examples:
+
+        >>> fruits = ["apple", "banana", "orange"]
+        >>> len(fruits)
+        3
+        >>> len("Toronto")
+        7
+        >>> favourite_things = ["walks", "peanut butter", "playing fetch"]
+        >>> if len(favourite_things) > 2:
+        ...     print("you have many favourite things!")
+        ...
+        you have many favourite things!
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Adding to a list
+
+        We can add things to a list anytime we want
+
+        ```python
+        fruits = ["apple", "banana", "orange"]
+        fruits.append("grapes")
+        fruits.append("pineapple")
+
+        len(fruits)
+        fruits
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Adding to a list
+
+        After we create a list, we can add new items to the end
+
+        ```python
+        >>> fruits = ["apple", "banana", "orange"]
+        >>> fruits.append("grapes")
+        >>> fruits.append("pineapple")
+
+        >>> len(fruits)
+        5
+        >>> fruits
+        ['apple', 'banana', 'orange', 'grapes', 'pineapple']
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        Python can sort things for you using the `sorted()` function
+
+        It sorts lists of things into their alphabetical order. You can also make it sort different ways if you wish
+
+        ![](framework/img/workshop/sorting2.png)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        Python can sort letters and numbers easily
+
+        ```python
+        my_numbers = [5, 3, 4, 1, 2]
+        sorted(my_numbers)
+
+        my_letters = ["d", "a", "c", "b"]
+        sorted(my_letters)
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        Python can sort letters and numbers easily
+
+        ```python
+        my_numbers = [5, 3, 4, 1, 2]
+        sorted(my_numbers)
+
+        my_letters = ["d", "a", "c", "b"]
+        sorted(my_letters)
+
+        my_list = ['b', 1, 'a', 2]  # What will happen when we sort this list?
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        Python can sort letters and numbers easily
+
+        ```python
+        >>> my_numbers = [5, 3, 4, 1, 2]
+        >>> sorted(my_numbers)
+        [1, 2, 3, 4, 5]
+
+        >>> my_letters = ["d", "a", "c", "b"]
+        >>> sorted(my_letters)
+        ['a', 'b', 'c', 'd']
+
+        >>> my_list = ['b', 1, 'a', 2]
+        >>> sorted(my_list)
+        [1, 2, 'a', 'b']
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        ```python
+        >>> my_letters = ["d", "a", "c", "b"]
+        >>> sorted(my_letters, reverse=True)
+        ['d', 'c', 'b', 'a']
+
+        # Now what's inside my_letters?
+
+        >>> my_letters
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        ```python
+        >>> my_letters = ["d", "a", "c", "b"]
+        >>> sorted(my_letters, reverse=True)
+        ['d', 'c', 'b', 'a']
+
+        # Now what's inside my_letters?
+
+        >>> my_letters
+        ['d', 'a', 'c', 'b']
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Sorting a list
+
+        ```python
+        >>> my_letters = ["d", "a", "c", "b"]
+        >>> sorted(my_letters, reverse=True)
+        ['d', 'c', 'b', 'a']
+
+        # Now what's inside my_letters?
+
+        >>> my_letters
+        ['d', 'a', 'c', 'b']
+
+        # Save the sorted list
+        >>> my_letters = sorted(my_letters)
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## What else can we do with a list?
+
+        Check what you can do with an object using `dir()`
+
+        ```python
+        >>> fruits = ["apple", "banana", "orange"]
+        >>> dir(fruits)
+        ```
+
+        Try some of them if you're curious!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## What else can we do with a list?
+
+        Check what you can do with an object using `dir()`
+
+        ```python
+        >>> fruits = ["orange", "apple", "banana"]
+        >>> fruits.sort()
+        >>> fruits
+        ['apple', 'banana', 'orange']
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Recap
+
+        * Add to a list with `.append()`
+        * `len()` gies you the length of something
+        * `sorted()` sort a list of things for you
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Looking at Toronto Housing Prices over Time
+
+        ### We'll use Python to:
+
+        * Open a CSV with housing prices from all over Canada
+        * Filter the list to only prices from the GTA
+        * Filter by other criteria
+        * Look at housing prices over the years
+
+        ![](framework/img/workshop/graph-increasing.png)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Looking at Toronto Housing Prices over Time
+
+        https://tinyurl.com/ybybd694
+
+        ![](framework/img/workshop/download-housing-price-csv.png)
+
+        Inside is 1 .csv file. Copy it to the same folder as your .py files
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Looking at Toronto Housing Prices over Time
+
+        ```
+        import csv
+
+        with open('03270046-eng.csv', 'r') as csv_file:
+            csv_rows = csv.DictReader(csv_file)
+            list_of_rows = list(csv_rows)
+
+        len(list_of_rows)
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Looking at Toronto Housing Prices over Time
+
+        ```
+        >>> import csv
+        >>>
+        >>> with open('03270046-eng.csv', 'r') as csv_file:
+        ...     csv_rows = csv.DictReader(csv_file)
+        ...     list_of_rows = list(csv_rows)
+        ...
+        >>> len(list_of_rows)
+        41076
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Looking at Toronto Housing Prices over Time
+
+        ```
+        import csv
+
+        with open('03270046-eng.csv', 'r') as csv_file:
+            csv_rows = csv.DictReader(csv_file)
+            list_of_rows = list(csv_rows)
+
+        for row in list_of_rows:
+            if row['GEO'] == 'Toronto and Oshawa, Ontario':
+               print row
+        # This will print A LOT of rows!
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Looking at Toronto Housing Prices over Time
+
+        ```
+        import csv
+
+        with open('03270046-eng.csv', 'r') as csv_file:
+            csv_rows = csv.DictReader(csv_file)
+            list_of_rows = list(csv_rows)
+
+        toronto_and_oshawa = []
+        for row in list_of_rows:
+            if row['GEO'] == 'Toronto and Oshawa, Ontario':
+               toronto_and_oshawa.append(row)
+
+        # We just made a new list!
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Excercise:
+
+        Give me a list of
+
+      </script>
+    </section>
+
 <!-- Last slide -->
 
     <section class="slide last">
