@@ -1954,7 +1954,7 @@ print number_of_todos
         >>> toronto_and_oshawa[418]
         {'INDEX': 'Total (house and land)', 'Ref_Date': '2015/11', 'Vector': 'v53600467', 'Value': '128.2', 'Coordinate': '16.1', 'Geographical classification': '35535, 35532', 'GEO': 'Toronto and Oshawa, Ontario'}
 
-        >>> toronto_and_oshawa[4444]
+        >>> toronto_and_oshawa[4000]
         ```
 
       </script>
@@ -1980,7 +1980,7 @@ print number_of_todos
         >>> toronto_and_oshawa[418]
         {'INDEX': 'Total (house and land)', 'Ref_Date': '2015/11', 'Vector': 'v53600467', 'Value': '128.2', 'Coordinate': '16.1', 'Geographical classification': '35535, 35532', 'GEO': 'Toronto and Oshawa, Ontario'}
 
-        >>> toronto_and_oshawa[4444]
+        >>> toronto_and_oshawa[4000]
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
         IndexError: list index out of range
@@ -2001,7 +2001,7 @@ print number_of_todos
         * "Land only"
         * "Total (house and land)"
 
-        Lets filter by just 1 of these values
+        Filter by 1 of these values
 
       </script>
     </section>
@@ -2010,7 +2010,7 @@ print number_of_todos
       <script type="text/template">
         ## Toronto Housing Prices Excercise
 
-        ### Give me a list of only the Land prices
+        ### Excercise: Make a new list containing only the Land prices
 
         ```python
         # Make a new list called land_only_prices
@@ -2023,7 +2023,7 @@ print number_of_todos
       <script type="text/template">
         ## Toronto Housing Prices Excercise
 
-        ### Give me a list of only the Land prices
+        ### Make a new list containing only the Land prices
 
         ```python
         # Make a new list called land_only_prices
@@ -2038,7 +2038,7 @@ print number_of_todos
       <script type="text/template">
         ## Toronto Housing Prices Excercise
 
-        ### Give me a list of only the Land prices
+        ### Make a new list containing only the Land prices
 
         ```python
         # Make a new list called land_only_prices
@@ -2054,7 +2054,7 @@ print number_of_todos
       <script type="text/template">
         ## Toronto Housing Prices Excercise
 
-        ### Give me a list of only the Land prices
+        ### Make a new list containing only the Land prices
 
         ```python
         # Make a new list called land_only_prices
@@ -2071,7 +2071,7 @@ print number_of_todos
       <script type="text/template">
         ## Toronto Housing Prices Excercise
 
-        ### Give me a list of only the Land prices
+        ### Make a new list containing only the Land prices
 
         ```python
         # Make a new list called land_only_prices
@@ -2089,7 +2089,73 @@ print number_of_todos
       <script type="text/template">
         ## Excercise:
 
-        Give me a list of
+        * Print me the list of land prices for the year 2011
+
+        ```python
+        for row in land_only_prices:
+            # ... fill this in ...
+
+        ```
+
+        Output:
+
+        ```
+        100.5
+        100.5
+        100.5
+        100.5
+        101.1
+        101.3
+        101.6
+        101.9
+        102.2
+        102.5
+        103.3
+        103.6
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Excercise:
+
+        * Print me the list of land prices for the year 2011
+
+        ```python
+        for row in land_only_prices:
+            if row["Ref_Date"].find("2011") > -1:
+               print(row["Value"])
+        ```
+
+        Output:
+
+        ```
+        100.5
+        100.5
+        100.5
+        100.5
+        101.1
+        101.3
+        101.6
+        101.9
+        102.2
+        102.5
+        103.3
+        103.6
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Excercises:
+
+        1. Print me the price for January of each year
+        1. What's the average price across all rows?
+        1. Which year/month had the highest price?
 
       </script>
     </section>
